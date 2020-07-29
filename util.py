@@ -7,6 +7,8 @@ from torch.autograd import Variable
 import numpy as np
 import cv2 
 
+
+#输出单一图片所含的目标类别的个数
 def unique(tensor):
     tensor_np = tensor.cpu().numpy()
     unique_np = np.unique(tensor_np)
